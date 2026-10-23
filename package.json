@@ -1,0 +1,20 @@
+{
+  "name": "tempo-appointment-reminder-system",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Tempo — appointment and reminder workspace with a MySQL backend",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "dev": "node serve.js",
+    "check": "node --check serve.js && node --check js/store.js && node --check js/api-client.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
